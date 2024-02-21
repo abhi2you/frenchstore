@@ -1,0 +1,134 @@
+body {
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+    background-image: url('https://th.bing.com/th/id/OIG2.40JioIot4qzSkGwbGrKw'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+#landing-page {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color:#FFFFFF;
+}
+
+#open-div {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed; 
+    top: 10%; /* Adjust for 80% coverage */
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top of other content */  
+}
+
+.container {
+    display: flex; /* Arrange main section and sidebar side-by-side */
+    width: 100%; 
+	
+}
+
+.container2 {
+    display: flex; /* Arrange main section and sidebar side-by-side */
+    width: 100%; 
+	
+}
+
+
+.main-section {
+    flex: 1; /* Occupy 65% of the space */
+    padding: 7px;
+	
+}
+
+.dairy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 5px; 
+}
+
+.meat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 5px; 
+}
+
+
+.dairy-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+.meat-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+
+.dairy-item.selected { 
+    background-color: lightblue; /* Example highlight color */
+    border-color: blue; /* Optional border change */
+}
+
+.meat-item.selected { 
+    background-color: lightblue; /* Example highlight color */
+    border-color: blue; /* Optional border change */
+}
+	
+.sidebar {
+    flex: 1; /* Occupy 35% of the space */
+	width: 50%; 
+}
+
+.sticky-note {
+    background-color: #ffffe0; /* Light Yellow */
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
+    border: 1px solid #e6e600; /* Slightly darker yellow border */
+    position: relative; /* Allows for the 'rotated corner' */
+    margin-bottom: 10px; 
+}
+
+/* Optional: Slightly rotated corner */
+.sticky-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 10px solid #e6e600; 
+    border-left: 10px solid transparent;
+}
+
+.container2 {
+    display: none; 
+}
