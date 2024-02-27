@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Grocery Game</title>
     <link rel="stylesheet" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
+
+</div>
+  
     <div id="landing-page">
+	<div class="button-container">
+  <button id="button1">
+    <img src="resources/images/help.png" alt="Help or about us">
+  </button>
+   <div id="myPopup" class="popuptext">
+<p>Play this game to learn basic french products name.<br><br>
+<b>How to Play?</b> (Its simple, easy and basic)<br>
+Match the shopping list with product image!<br><br>
+<b>Created with ❤️</b><br>
+			<b>Designed by:</b> Abhishek Chourasia<br>
+			<b>Idea by:</b> Patrick Harty Killeen<br>
+			GameJam @ 2024
+</p>
+  </div>
+</div>
+
         <h1>French Grocery Adventure</h1>
+		<br>
         <button id="open-div">Start the Game</button>
     </div>
         <div id="overlay" style="display: none;">
             
     <div class="container1">
+					
 	<center>
         <div class="main-section">
             <h2>Dairy Products</h2>
@@ -36,35 +60,101 @@
 </div>
 </center>
     </div>
-			
-        </div>
-		
+	</div>
+
 		    <div class="container2">
-	<center>
+			<center>
         <div class="main-section">
             <h2>Meat Products</h2>
             <div class="meat-grid">
-                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/milk.png"/></div>
-                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/icecream.png"/></div>
-                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/cheese.png"/></div>
-                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/butter.png"/></div>
-                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/bounty.png"/></div>
-                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/yogurt.png"/></div>
+                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/bacon.png"/></div>
+                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/sausage.png"/></div>
+                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/egg.png"/></div>
+                <div class="meat-item" data-correct="false"><img width="60px" src="resources/images/beef.png"/></div>
+                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/rooster.png"/></div>
+                <div class="meat-item" data-correct="true"><img width="60px" src="resources/images/salmon.png"/></div>
             </div>
         </div>
         <div class="sidebar">
             <div class="sticky-note">
 			<h3>Shopping List:</h3><br>
-			1. Pork<br>
-			2. Chicken Legs<br>
+			1. Rooster<br>
+			2. Sausage<br>
 			3. Salmon<br>
 			<br>
 </div>
-</center>
     </div>
-			
+			</center>
         </div>
+		
+		
+				    <div class="container3">
+			<center>
+        <div class="main-section">
+            <h2>Beverages Products</h2>
+            <div class="bev-grid">
+                <div class="bev-item" data-correct="false"><img width="60px" src="resources/images/lemonade.png"/></div>
+                <div class="bev-item" data-correct="false"><img width="60px" src="resources/images/beer.png"/></div>
+                <div class="bev-item" data-correct="true"><img width="60px" src="resources/images/water.png"/></div>
+                <div class="bev-item" data-correct="true"><img width="60px" src="resources/images/Juice.png"/></div>
+                <div class="bev-item" data-correct="true"><img width="60px" src="resources/images/wine.png"/></div>
+                <div class="bev-item" data-correct="false"><img width="60px" src="resources/images/coke.png"/></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sticky-note">
+			<h3>Shopping List:</h3><br>
+			1. Water<br>
+			2. Juice<br>
+			3. Wine<br>
+			<br>
+</div>
+    </div>
+			</center>
+        </div>
+		
+						    <div class="container4">
+			<center>
+        <div class="main-section">
+            <h2>Choose method to pay!</h2>
+            <div class="final-grid">
+                <div class="final-item" data-correct="false"><img width="60px" src="resources/images/card.png"/></div>
+                <div class="final-item" data-correct="true"><img width="60px" src="resources/images/cash.png"/></div>
+                <div class="final-item" data-correct="false"><img width="60px" src="resources/images/gift.png"/></div>
 
+            </div>
+        </div>
+		<h2>Total Amount to be paid: €24.57</h2>
+		<button id="paynow">Pay Now</button>
+		<p></p>
+        <div class="sidebar">
+            <div class="sticky-note">
+			<h3>Wallet</h3><br>
+			1. Card : €15<br>
+			2. Cash : €30<br>
+			3. Gift Voucher : €10<br>
+			<br>
+</div>
+</div>
+			</center>
+        </div>
+		
+		<div class="container5">
+			<center>
+        <div class="main-section">
+            <h2>Thanks for trying out!</h2>
+<p><b>Created with ❤️</b><br>
+			<b>Designed by:</b> Abhishek Chourasia<br>
+			<b>Idea by:</b> Patrick Harty Killeen<br>
+			GameJam @ 2024
+			</p>
+			</center>
+        </div>
+		
+		</div>
+		
+
+		
 
     <script src="resources/script.js"></script> 
 

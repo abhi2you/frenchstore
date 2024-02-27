@@ -10,6 +10,26 @@ body {
     background-position: center; 
 }
 
+.button-container {
+  position: absolute;
+  top: 10px; 
+  right: 20px; 
+  padding: 4px;
+  border-radius: 10px;
+}
+
+button {
+  border: none; 
+  background: none;
+  padding: 0;     
+  cursor: pointer; 
+}
+
+button img {
+  max-width: 50px; /* Adjust the image size as needed */
+}
+
+
 #landing-page {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); 
@@ -18,16 +38,32 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
+	font-family: 'Shadows Into Light', cursive; /
 }
 
 h2 {
-    color:#FFFFFF;
+        color:#FFFFFF;
+		font-family: 'Protest Riot', cursive; /
+}
+
+p {
+	        color:#FFFFFF;
+		font-family: 'Protest Riot', cursive; /
 }
 
 #open-div {
     padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#paynow {
+	   padding: 10px 20px;
     background-color: #007bff;
     color: white;
     font-size: 1.2em;
@@ -44,20 +80,91 @@ h2 {
     height: 80%;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     z-index: 1000; /* Ensure it's on top of other content */  
+	  padding: 4px;
+    border-radius: 10px;
 }
 
 .container {
     display: flex; /* Arrange main section and sidebar side-by-side */
     width: 100%; 
+	z-index: 1001;
 	
 }
 
 .container2 {
     display: flex; /* Arrange main section and sidebar side-by-side */
-    width: 100%; 
+	top: 10%; /* Adjust for 80% coverage */
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	z-index: 1002;
 	
 }
 
+
+.container3 {
+    display: flex; /* Arrange main section and sidebar side-by-side */
+	top: 10%; /* Adjust for 80% coverage */
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	z-index: 1002;
+	
+}
+
+.container4 {
+    display: flex; /* Arrange main section and sidebar side-by-side */
+	top: 10%; /* Adjust for 80% coverage */
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	z-index: 1003;
+	
+}
+
+.container5 {
+    display: flex; /* Arrange main section and sidebar side-by-side */
+	top: 10%; /* Adjust for 80% coverage */
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	z-index: 1004;
+	
+}
+
+.final-grid {
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly with spacing */
+  width: 100%; /* Allow final-grid to take up full container width */
+  gap: 5px; 
+}
+
+.final-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+.final-item.selected { 
+    background-color: lightblue; /* Example highlight color */
+    border-color: blue; /* Optional border change */
+}
+
+
+.dairy-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+
+.sidebar3 {
+  flex: 1; /* Make both sidebars take up equal space */
+  margin: 10px; /* Add some spacing around sidebars */
+  justify-content: space-between;
+}
 
 .main-section {
     flex: 1; /* Occupy 65% of the space */
@@ -72,22 +179,8 @@ h2 {
     gap: 5px; 
 }
 
-.meat-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 5px; 
-}
-
 
 .dairy-item {
-    padding: 15px;
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    cursor: pointer;  
-}
-
-.meat-item {
     padding: 15px;
     margin-bottom: 10px; 
     border: 1px solid #ccc; 
@@ -100,10 +193,48 @@ h2 {
     border-color: blue; /* Optional border change */
 }
 
+.meat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 5px; 
+}
+
+.meat-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+
 .meat-item.selected { 
     background-color: lightblue; /* Example highlight color */
     border-color: blue; /* Optional border change */
 }
+
+
+.bev-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 5px; 
+}
+
+.bev-item {
+    padding: 15px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    cursor: pointer;  
+}
+
+
+.bev-item.selected { 
+    background-color: lightblue; /* Example highlight color */
+    border-color: blue; /* Optional border change */
+}
+
+
 	
 .sidebar {
     flex: 1; /* Occupy 35% of the space */
@@ -117,6 +248,7 @@ h2 {
     border: 1px solid #e6e600; /* Slightly darker yellow border */
     position: relative; /* Allows for the 'rotated corner' */
     margin-bottom: 10px; 
+		font-family: 'Protest Riot', cursive; /
 }
 
 /* Optional: Slightly rotated corner */
@@ -127,8 +259,57 @@ h2 {
     right: 0;
     border-top: 10px solid #e6e600; 
     border-left: 10px solid transparent;
+	font-family: 'Protest Riot', cursive; /
 }
 
 .container2 {
     display: none; 
+}
+
+.container3 {
+    display: none; 
+}
+
+.container4 {
+    display: none; 
+}
+
+
+.container5 {
+    display: none; 
+}
+
+/* Style for the popup */
+.popuptext {
+  visibility: hidden; /* Initially hidden */
+  width: 400px; 
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: static;
+  top: 120%; /* Adjust positioning as needed */
+  left: 50%;
+  margin-left: -400px; /* Half of the popup's width */
+  z-index: 1;  /* Ensure popup is on top */
+}
+
+/* Style for a simple popup arrow */
+.popuptext::after {
+  content: "";
+  position: static;
+  top: -5px; /* At the top of the popup */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Show the popup on hover */
+.button-container:hover .popuptext {
+  visibility: visible;
+  opacity: 1;  /* Add a fade-in effect */
+  transition: opacity 0.5s;
 }
